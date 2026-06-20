@@ -36,6 +36,23 @@ tracks/0/keys = {
 "values": [0, 1, 2, 3]
 }
 
+[sub_resource type="Animation" id="Animation_you3v"]
+resource_name = "recover"
+length = 0.001
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [18]
+}
+
 [sub_resource type="Animation" id="Animation_ac14d"]
 resource_name = "run"
 length = 0.6
@@ -75,6 +92,7 @@ tracks/0/keys = {
 _data = {
 &"RESET": SubResource("Animation_kr223"),
 &"idle": SubResource("Animation_iv631"),
+&"recover": SubResource("Animation_you3v"),
 &"run": SubResource("Animation_ac14d"),
 &"tackle": SubResource("Animation_27l2m")
 }

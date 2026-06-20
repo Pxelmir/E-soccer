@@ -10,8 +10,8 @@ func _enter_tree() -> void:
 	animation_player.play("tackle")
 	time_start_tackle = Time.get_ticks_msec()
 	
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if Time.get_ticks_msec() - time_start_tackle > DURATION_TACKLE:
-		state_transition_request.emit(Player.State.MOVING)
+		state_transition_request.emit(Player.State.RECOVERING)
 		
 		
